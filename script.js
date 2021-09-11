@@ -1,3 +1,8 @@
+document.getElementById("screen").style.display = "none";
+setTimeout(function(){
+document.getElementById("preloader").style.display = "none";
+document.getElementById("screen").style.display = "block";
+},2000);
 $("title").ready(function(){$(".Facebook,.Support,.Youtube,.Information").hide();});
 $(".icon1").click(function(){$(".Support").show();document.getElementById("icon1").style.transform = "scale(1.4)";window.scrollTo(0, 0);});
 $(".icon2").click(function(){$(".Facebook").show();document.getElementById("icon2").style.transform = "scale(1.4)";window.scrollTo(0, 0);});
@@ -5,7 +10,6 @@ $(".icon3").click(function(){$(".Home").show();window.scrollTo(0, 0);});
 $(".icon4").click(function(){$(".Youtube").show();document.getElementById("icon4").style.transform = "scale(1.4)";window.scrollTo(0, 0);});
 $(".icon5").click(function(){$(".Information").show();document.getElementById("icon5").style.transform = "scale(1.4)";window.scrollTo(0, 0);});
 $(".direction").click(function(){$(".maps").slideToggle(100);});
-
 $(".icon1,.icon2,.icon3,.icon4").click(function(){
                                                    $(".Information").hide();
                                                    document.getElementById("icon5").style.transform = "scale(1)";

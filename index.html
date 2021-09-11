@@ -25,7 +25,7 @@
 		<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 </head>
 <body>
-
+<div id="screen">
 <!-- Support Section -->
 <div class="Support">
 <div class="main-block">
@@ -37,8 +37,8 @@
         <input type="text" name="name" id="name" placeholder="Name" required/>
       </div>
       <div  class="info-item">
-        <label class="icon" for="age"><i class="icofont-calendar"></i></i></label>
-        <input type="number" name="age" id="age" placeholder="Age" required/>
+        <label class="icon" for="topic"><i class="icofont-calendar"></i></i></label>
+        <input type="text" name="topix" id="topic" value="Paid Promotion" readonly/>
       </div>
       <div  class="info-item">
         <label class="icon" for="email"><i class="icofont-envelope"></i></label>
@@ -50,7 +50,7 @@
       </div>
     </div>
     <h3>Please describe the type of promotion you want</h3>
-    <textarea rows="4"></textarea>
+    <textarea rows="15"></textarea>
     <button class="formbtn" type="submit" href="/">Submit</button>
   </form>
 </div>
@@ -78,7 +78,7 @@
       		<a href="https://youtube.com/channel/UCboxrAcuoUIVQv2tuxzlBkA"><button class="btns youtube">Youtube   <i class="icofont-youtube-play"></i></button></a>
       </div>
    <br><br>
-<marquee behaviour="scroll" loop="true" scrolldirection="left" >Hisar News 24 :- Aj ki breaking news, falana mei popcorn</marquee>
+<marquee behaviour="scroll" loop="true" direction="left" scrollamount="10" scrolldelay="20">Hisar News 24 :- Aj ki breaking news, falana mei popcorn</marquee>
    <br><br><br>
     </div>
 </div>
@@ -170,26 +170,40 @@
   <div class="bottom-nav">
   
     <label class="icon1" id="icon1" for="tab-1">
-      <i href=".Support" class="icofont-speech-comments" id="icon1"></i>
+      <i href=".Support" class="icofont-speech-comments" id="icon1" name="icon1"></i>
+    <label id="lbl" for="icon1">PROMOTION</label>
     </label>
 
     <label class="icon2" id="icon2" for="tab-2">
-      <i href=".Facebook" class="icofont-facebook" id="icon2"></i>
+      <i href=".Facebook" class="icofont-facebook" id="icon2" name="icon2"></i>
+    <label id="lbl" for="icon2">FACEBOOK</label>
     </label>
     
      <label class="icon3" for="tab-3">
      <img href=".Home" class="b-l" src="HN24-2.png" id="icon3" height="100px" width="100px" alt="HN24">
+
      </label>
      
     <label class="icon4" id="icon4" for="tab-4">
-      <i href=".Youtube" class="icofont-youtube-play" id="icon4"></i>
+      <i href=".Youtube" class="icofont-youtube-play" id="icon4" name="icon4"></i>
+    <label id="lbl" for="icon4">YOUTUBE</label>
     </label>
 
     <label class="icon5" id="icon5" id="icon5" for="tab-5">
-      <i href=".Information" class="icofont-users-alt-1" id="icon5"></i>
+      <i href=".Information" class="icofont-users-alt-1" id="icon5" name="icon5"></i>
+    <br><label id="lbl" for="icon5">INFO</label>
     </label>
 
   </div>
+</div>
+</div>
+<div id="preloader">
+	<div class="logo-container">
+		<img src="HN24-2.png" class="logo">
+	</div>
+	<div class="container-home">
+		<h1 id="heading3">Haryana <font>News 24</font></h1>
+	</div>
 </div>
 <!--https://www.youtube.com/channel/UCeqqVvtYDc1eYENrl1ahcJA?app=desktop-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
