@@ -1,4 +1,4 @@
-$("title").ready(function(){$(".Facebook,.Support,.Youtube,.Information,.maps").hide();});
+$("title").ready(function(){$(".Facebook,.Support,.Youtube,.Information").hide();});
 $(".icon1").click(function(){$(".Support").show();document.getElementById("icon1").style.transform = "scale(1.4)";});
 $(".icon2").click(function(){$(".Facebook").show();document.getElementById("icon2").style.transform = "scale(1.4)";});
 $(".icon3").click(function(){$(".Home").show();});
@@ -37,7 +37,7 @@ function loadVideo(iframe) {
       console.log(videoNumber);
       var link = data.items[videoNumber].link;
       id = link.substr(link.indexOf("=") + 1);
-      iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?enablejsapi=1&controls=1&autoplay=1&modestbranding=1");
+      iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?enablejsapi=1&controls=1&autoplay=1&modestbranding=1&fullscreen=1");
     }
   );
 }
