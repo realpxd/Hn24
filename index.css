@@ -21,14 +21,13 @@ html {
 .bottom-nav {
     background: #fff;
     width: 40rem;
-    height: 8.5rem;
+    height: 6rem;
     box-shadow: 0 -0.3rem 3rem 0 rgba(55, 55, 55, .2);
     padding: 0.1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    margin-top:90vh;
     margin-bottom:0;
     bottom:0;
     z-index:100;
@@ -314,7 +313,7 @@ a{color:initial;text-decoration:none;}
         width: 48%;
    }
 }
-#preloader{transition:1s;animation:zoom 2s ease-in 1.5s infinite alternate;}
+#preloader{transition:1s;animation:zoom 2s ease-in 1.5s 1 alternate;}
 @keyframes zoom{
     from{}
     to{transform:scale(10);opacity:0;display:none;}
@@ -332,3 +331,4 @@ a{color:initial;text-decoration:none;}
 	    width:80px;
 	}
 	
+
