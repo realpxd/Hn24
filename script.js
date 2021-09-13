@@ -28,9 +28,9 @@ $(".icon1,.icon3,.icon4,.icon5").click(function(){
                                                    });
 $(".icon2,.icon3,.icon4,.icon5").click(function(){
                                                    $(".Support").hide();
-                                                   document.getElementById("icon1").style.transform = "scale(1)";
+                                                  document.getElementById("icon1").style.transform = "scale(1)";
                                                    });
-                                                   
+                                                  
 var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
 function loadVideo(iframe) {
   $.getJSON(reqURL + iframe.getAttribute('cid') + "&api_key=8bwwlljmtoiscsogior2ydu7phfapwa1hvwvkxkr&order_by=pubDate&order_dir=desc&count=27",
@@ -81,3 +81,6 @@ function href(){
 };
 setTimeout(function(){ console.clear();}, 7500);
 setTimeout(function(){ do{spam++;console.log(spam);}while(spam<9999); }, 8000);
+
+
+

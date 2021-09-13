@@ -38,7 +38,7 @@
     <div class="info">
       <div class="info-item">
         <label class="icon" for="name"><i class="icofont-user"></i></label>
-        <input type="text" name="name" id="name" placeholder="Name" required/>
+        <input type="text" name="name" id="name" placeholder="Name" autofill required/>
       </div>
       <div  class="info-item">
         <label class="icon" for="topic"><i class="icofont-calendar"></i></i></label>
@@ -46,15 +46,15 @@
       </div>
       <div  class="info-item">
         <label class="icon" for="email"><i class="icofont-envelope"></i></label>
-        <input type="email" name="email" id="email" placeholder="Email" required/>
+        <input type="email" name="email" id="email" placeholder="Email" autofill required/>
       </div>
       <div  class="info-item">
         <label class="icon" for="phone"><i class="icofont-phone"></i></label>
-        <input type="number" name="phone" id="phone" placeholder="Phone" required/>
+        <input type="number" name="phone" id="phone" placeholder="Phone" autofill required/>
       </div>
     </div>
     <h3>Please describe the type of promotion you want</h3>
-    <textarea rows="15"></textarea>
+    <textarea rows="15" required></textarea>
     <button class="formbtn" type="submit" href="/">Submit</button>
   </form>
 </div>
@@ -82,7 +82,7 @@
       		<a href="https://youtube.com/channel/UCboxrAcuoUIVQv2tuxzlBkA"><button class="btns youtube">Youtube   <i class="icofont-youtube-play"></i></button></a>
       </div>
    <br><br>
-<marquee behaviour="scroll" loop="true" direction="left" scrollamount="10" scrolldelay="50">Hisar News 24 :- Aj ki breaking news, falana mei popcorn</marquee>
+<marquee behaviour="scroll" loop="true" direction="left" scrollamount="10" scrolldelay="50">Hisar News 24 :- Aj ki breaking news, huehuehue</marquee>
    <br><br><br>
     </div>
 </div>
@@ -212,6 +212,60 @@
 <!--https://www.youtube.com/channel/UCeqqVvtYDc1eYENrl1ahcJA?app=desktop-->
     <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
 	<script src="script.js"></script>
+<!--<html>
+<head>
+<title></title>
+</head>
+<style type="text/css">
+*{
+    margin:0;
+}
+</style>
+<body>
+<script src= "https://threejs.org/build/three.js">
+ </script>
+ <script>
+  function start(){
+const texture = new THREE.TextureLoader().load( 'HN24-2.png' );
+const texturE = new THREE.TextureLoader().load( 'HN24-1.png' );
+var scene =new THREE.Scene();
+var camera =new THREE.PerspectiveCamera(60,1,0.1,1000);
+var render =new THREE.WebGLRenderer();
+render.setSize(window.innerWidth,window.innerHeight);
+document.body.appendChild(render.domElement);
+var sphere = new THREE.BoxGeometry(50,50,50,50)
+var terrain =new THREE.BoxGeometry(50,50,50,50);
+var circlem = new THREE.MeshBasicMaterial({map: texture })
+var circle =new THREE.Mesh(sphere,circlem)
+circle.position.x = 90
+circle.position.y = 20
+scene.add(circle)
+var material =new THREE.MeshBasicMaterial({map: texturE,
+visible:true});
+camera.position.z = 200
+camera.position.x +=100
+var plane = new THREE.Mesh(terrain,material);
+scene.add(plane);
+plane.position.x += 90
+plane.position.z -= 10
+plane.position.y -= 40
+plane.rotation.x +=900
+function anim(){
+    render.render(scene,camera)
+    circle.rotation.y += 0.01
+    circle.rotation.x +=0.01
+    plane.rotation.z +=0.01
+    requestAnimationFrame(anim)
+}
+anim()
 
+}
+
+    start()
+
+
+ </script>-->
+</body>
+</html>
 </body>
 </html>
