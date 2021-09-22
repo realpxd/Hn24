@@ -3,7 +3,7 @@ setTimeout(function(){
 document.getElementById("preloader").style.display = "none";
 document.getElementById("screen").style.display = "block";
 },2000);
-$("title").ready(function(){$(".Facebook,.Support,.Youtube,.Information").hide();});
+$("title").ready(function(){$(".Facebook,.Support,.Youtube,.Information,.maps").hide();});
 $(".icon1").click(function(){$(".Support").show();document.getElementById("icon1").style.transform = "scale(1.4)";window.scrollTo(0, 0);});
 $(".icon2").click(function(){$(".Facebook").show();document.getElementById("icon2").style.transform = "scale(1.4)";window.scrollTo(0, 0);});
 $(".icon3").click(function(){$(".Home").show();window.scrollTo(0, 0);});
