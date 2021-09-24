@@ -36,29 +36,17 @@ function loadVideo(iframe) {
   $.getJSON(reqURL + iframe.getAttribute('cid') + "&api_key=8bwwlljmtoiscsogior2ydu7phfapwa1hvwvkxkr&order_by=pubDate&order_dir=desc&count=27",
     function(data) {
       var videoNumber = (iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0);
-      console.log(videoNumber);
       var link = data.items[videoNumber].link;
       id = link.substr(link.indexOf("=") + 1);
       iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?enablejsapi=1&controls=1&autoplay=1&modestbranding=1&fullscreen=1");
     }
   );
 }
-
 var iframes = document.getElementsByClassName('latestVideoEmbed');
 for (var i = 0, len = iframes.length; i < len; i++) {
   loadVideo(iframes[i]);
 }
 console.clear();
-var spam = 0;
-$(document).on('ready', function() {
-
-  $(".variable").slick({
-    dots: true,
-    infinite: true,
-    variableWidth: true
-  });
-  
-});
 
 var tag = document.createElement("script");
 tag.src = "//www.youtube.com/player_api";
@@ -73,14 +61,36 @@ while(i<15){
 });
 
 console.clear();
-function href(){
-	var href = document.getElementsByTagName('a');
-		href.setAttribute("target","_blank");
-		href.setAttribute("rel" , "noopener noreferrer");
-		var g = href.getAttribute('rel');
-};
 setTimeout(function(){ console.clear();}, 7500);
-setTimeout(function(){ do{spam++;console.log(spam);}while(spam<9999); }, 8000);
+function sendmail(){
+			var name = $('#name').val();
+			var email = $('#email').val();
+			var subject = $('#topic').val();
+            var message = $('#Message').val();
+			var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message+'<br>h';
+			//console.log(name, phone, email, message);
 
-
-
+			Email.send({
+        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+				To: 'saininaman006@gmail.com',
+				From: email,
+				Subject: subject,
+				Body: Body
+			}).then(
+				message =>{
+					//console.log (message);
+					if(message=='OK'){
+					alert('Your mail has been send. Thanks for connecting to us.');
+					}
+					else{
+						console.error (message);
+						alert('There is error at sending message. ')
+					}}
+			);};
+$(document).on('ready', function() {
+  $(".variable").slick({
+    dots: true,
+    infinite: true,
+    variableWidth: true
+  });
+});

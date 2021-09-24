@@ -11,6 +11,7 @@ html {
     scroll-behavior:smooth;
     -webkit-tap-highlight-color: darkred;
     font-family: 'Poppins', sans-serif;
+    user-select:none;
 }
 .container {
     display: flex;
@@ -199,12 +200,12 @@ hr{
     margin: 50px auto;
 }
 	.slick-slide {
-	    margin: 0px 100px;
+	    margin: 0px 5px;
 	}
 	.slick-slide img {
 	    width: 80vw;
 	    border-radius:20px;
-	    margin-left:-1px;
+
 	}
 	.slick-prev:before,
 	.slick-next:before {
@@ -256,7 +257,7 @@ a{color:initial;text-decoration:none;}
 .bottom_border { border-bottom:1px solid #323f45; padding-bottom:20px; font-size:12pt; text-align:center;}
 .social_icon { display:table; margin:15px auto 0 auto; list-style-type:none;  }
 	.social_icon li { padding-left:20px; padding-top:1px; float:left; }
-	.social_icon li a {  font-size:14px; color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
+	.social_icon li a {  font-size:14px; color:#CCC; border:1px solid #CCC; padding:10px;border-radius:50%;}
 		.social_icon li a:hover{transition:0.2s;box-shadow:0 0 10px black; color:#666;}
 		.social_icon li i {  width:20px; height:20px; text-align:center;}
 .text-cr{text-align:center;}
@@ -298,9 +299,10 @@ a{color:initial;text-decoration:none;}
 				    background: #666;
 				    color: #fff;
 				}
-				textarea {
+				textarea,#Message {
 				    width: 99%;
 				    margin-bottom: 12px;
+				    min-height: 140px;
 				}
 				.formbtn {
 				    width: 100%;
@@ -321,11 +323,7 @@ a{color:initial;text-decoration:none;}
         width: 48%;
    }
 }
-#preloader{transition:1s;animation:zoom 2s ease-in 1.5s 1 alternate;}
-@keyframes zoom{
-    from{}
-    to{transform:scale(10);opacity:0;display:none;}
-}
+#preloader{transition:1s;animation:zoom 2s ease-in 1.5s 1 alternate;overflow:hidden;}
 	.logo-container{
 	    display:block;
 	    margin:10%;
@@ -338,5 +336,8 @@ a{color:initial;text-decoration:none;}
 	    height:60px;
 	    width:80px;
 	}
-	
+@keyframes zoom{
+    from{}
+    to{transform:scale(15);opacity:0;display:none;}
+}
 

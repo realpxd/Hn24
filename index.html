@@ -5,12 +5,14 @@
     |    |    | \   |         |    |    |
     |____|    |  \  |     ____|    |____|
     |    |    |   \ |     |             |
-    |    |    |    \|     |_____        |
+    |    |    |    \|     |_____        |       .com
 -->
 <head>
 <title>HN24 NEWS | Ek kadam aage</title>
 <!-- Jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 <!-- Data Aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
@@ -22,6 +24,17 @@
 		<meta property="og:image" content="HN24-1.jpg" />
 	<meta name="keywords" content="Haryana News,bHisar News, HN24NEWS, HN24, HN, Harayana, Hisar, News, News channel, News channels" />
 	<meta name="author" content="HARYANA NEWS | Ek kadam aage" />
+		<meta property="og:image" content="HN24-1.jpg" />
+	<meta property="og:title" content="HARYANA NEWS | Ek kadam aage" />
+	<meta property="og:url" content="" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Haryana News 24 | Top Viral NEWS Today" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:site_name" content="" />
+	<meta name="twitter:title" content="HARYANA NEWS | Ek kadam aage" />
+	<meta name="twitter:description" content="Haryana News 24 | Top Viral NEWS Today" />
+	<meta name="twitter:url" content="" />
+		<meta name="twitter:image" content="HN24-1.jpg" />
 <!-- Styles -->
 	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
@@ -34,7 +47,7 @@
 <div class="Support">
 <div class="main-block">
   <h1>Get <font class="pp">paid promotion</font></h1>
-  <form action="/">
+  <form action="javascript:sendmail()">
     <div class="info">
       <div class="info-item">
         <label class="icon" for="name"><i class="icofont-user"></i></label>
@@ -42,7 +55,7 @@
       </div>
       <div  class="info-item">
         <label class="icon" for="topic"><i class="icofont-calendar"></i></i></label>
-        <input type="text" name="topix" id="topic" value="Paid Promotion" readonly/>
+        <input type="text" name="topic" id="topic" value="Paid Promotion" readonly/>
       </div>
       <div  class="info-item">
         <label class="icon" for="email"><i class="icofont-envelope"></i></label>
@@ -54,7 +67,8 @@
       </div>
     </div>
     <h3>Please describe the type of promotion you want</h3>
-    <textarea rows="15" required></textarea>
+<textarea name="Message" class="form-control" id="Message" placeholder="Message"
+                required=""></textarea>
     <button class="formbtn" type="submit" href="/">Submit</button>
   </form>
 </div>
@@ -68,7 +82,8 @@
    		 <h2>- एक कदम आगे | नई सोच के साथ</h2>
   	 </div>
      		<br><br><div id="hr"><hr></div><br><br>
-     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHN24NEWS%2F&tabs=timeline&width=382&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="98%" height="500px" style="border:none;overflow:hidden;outline:none;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHN24NEWS%2F&tabs=timeline&width=382&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" 
+     width="0" height="500" style="border:none;overflow:hidden;outline:none;width:100%;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media;"></iframe>
 </div>
 
 <!-- Home Page Section -->
@@ -77,37 +92,37 @@
 	<div class="container-home">
 		<h1>Haryana <font>News 24</font></h1>
 			<h2>- एक कदम आगे | नई सोच के साथ</h2><br>
-      <div class="box">
+      <!--<div class="box">
       		<a href="https://www.facebook.com/HN24VIRAL/"><button class="btns facebook">Facebook   <i class="icofont-facebook"></i></button></a>
       		<a href="https://youtube.com/channel/UCboxrAcuoUIVQv2tuxzlBkA"><button class="btns youtube">Youtube   <i class="icofont-youtube-play"></i></button></a>
       </div>
-   <br><br>
+   <br><br>-->
    <iframe class="blogs" src="https://naman-saini.blogspot.com/?m=1" height="500" width="100%"></iframe>
-<marquee behaviour="scroll" loop="true" direction="left" scrollamount="10" scrolldelay="50">Hisar News 24 :- Aj ki breaking news, huehuehue</marquee>
-   <br><br><br>
+<!--<marquee behaviour="scroll" loop="true" direction="left" scrollamount="10" scrolldelay="50">Hisar News 24 :- </marquee>-->
+   <br><br>
     </div>
 </div>
 
 <!-- Youtube Section -->
 <div class="Youtube">
-<iframe width="393" height="200" src="https://www.youtube-nocookie.com/embed/wjN9Ismg12s?controls=0&autoplay=1&disablekb=1&loop=1&modestbranding=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+<iframe style="width:100%;" width="393" height="200" src="https://www.youtube-nocookie.com/embed/wjN9Ismg12s?controls=0&autoplay=1&disablekb=1&loop=1&modestbranding=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;"></iframe>
 		<br><br><div class="hr1"><hr></div> 
 <div class="moreVid">
-	<iframe id="ytv0" class="latestVideoEmbed" vnum='0' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br>
-	<iframe id="ytv1" class="latestVideoEmbed" vnum='1' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br>
-	<iframe id="ytv2" class="latestVideoEmbed" vnum='2' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br>
-	<iframe id="ytv3" class="latestVideoEmbed" vnum='3' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br>
-	<iframe id="ytv4" class="latestVideoEmbed" vnum='4' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br>
-	<iframe id="ytv5" class="latestVideoEmbed" vnum='5' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br>
-	<iframe id="ytv6" class="latestVideoEmbed" vnum='6' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br>
-	<iframe id="ytv7" class="latestVideoEmbed" vnum='7' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br>
-	<iframe id="ytv8" class="latestVideoEmbed" vnum='8' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br>
-	<iframe id="ytv9" class="latestVideoEmbed" vnum='9' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br>
-	<iframe id="ytv10" class="latestVideoEmbed" vnum='10' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br>
-	<iframe id="ytv11" class="latestVideoEmbed" vnum='11' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br>
-	<iframe id="ytv12" class="latestVideoEmbed" vnum='12' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br>
-	<iframe id="ytv13" class="latestVideoEmbed" vnum='13' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br>
-	<iframe id="ytv14" class="latestVideoEmbed" vnum='14' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+	<iframe id="ytv0" class="latestVideoEmbed" vnum='0' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe><br><br><br>
+	<iframe id="ytv1" class="latestVideoEmbed" vnum='1' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe><br><br><br>
+	<iframe id="ytv2" class="latestVideoEmbed" vnum='2' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe><br><br><br>
+	<iframe id="ytv3" class="latestVideoEmbed" vnum='3' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe><br><br><br>
+	<iframe id="ytv4" class="latestVideoEmbed" vnum='4' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe><br><br><br>
+	<iframe id="ytv5" class="latestVideoEmbed" vnum='5' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe><br><br><br>
+	<iframe id="ytv6" class="latestVideoEmbed" vnum='6' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe><br><br><br>
+	<iframe id="ytv7" class="latestVideoEmbed" vnum='7' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe><br><br><br>
+	<iframe id="ytv8" class="latestVideoEmbed" vnum='8' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe><br><br><br>
+	<iframe id="ytv9" class="latestVideoEmbed" vnum='9' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe><br><br><br>
+	<iframe id="ytv10" class="latestVideoEmbed" vnum='10' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe><br><br><br>
+	<iframe id="ytv11" class="latestVideoEmbed" vnum='11' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe><br><br><br>
+	<iframe id="ytv12" class="latestVideoEmbed" vnum='12' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe><br><br><br>
+	<iframe id="ytv13" class="latestVideoEmbed" vnum='13' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe><br><br><br>
+	<iframe id="ytv14" class="latestVideoEmbed" vnum='14' cid="UCboxrAcuoUIVQv2tuxzlBkA" width="370" height="180" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe><br><br>
 </div>
 </div>
 
@@ -142,11 +157,11 @@
        			      </div>
           			  </div>
       			</p>
-      			<p><i class="icofont-phone"></i>  +91-9999988888  </p>
-      			<p><i class="icofont-envelope"></i> hn24news@gmail.com  </p>      
+      			<p><a href="tel:"> <i class="icofont-phone"></i>  +91-9999988888  </a></p>
+      			<p><a href="mailto:hn24news@gmail.com"> <i class="icofont-envelope"></i> Hn24news@gmail.com  </a></p>      
       	   	  </div>    
-      	   	  <div><br><br>
-      			<h3>Quick links</h3>
+      	   	  <div><br>
+      			<!--<h3>Quick links</h3>
       			<ul class="QuickLinks">
       				<li><a href="tel:+16413909836">Contact through phone</a></li>
       				<li><a href="mailto:hn24news@gmail.com">Gmail</a></li>
@@ -154,12 +169,12 @@
       				<li><a href="https://instagram.com/hn24news?utm_medium=copy_link">Instagram</a></li>
       				<li><a href="https://youtube.com/channel/UCboxrAcuoUIVQv2tuxzlBkA">Youtube</a></li>
       				<li><a href="https://twitter.com/Hn24News?s=09">Twitter</a></li>
-      			</ul>
+      			</ul>-->
      		  </div>
       	   </div>
       	</div>
       	<div class="container3">
-      			<ul class="social_icon">
+      			<ul class="social_icon"><br>
       				<li><a href="https://www.facebook.com/HN24NEWS/"><i class="icofont-facebook"></i></a></li>
       				<li><a href="https://twitter.com/Hn24News?s=09"><i class="icofont-twitter"></i></a></li>
       				<li><a href="https://youtube.com/channel/UCboxrAcuoUIVQv2tuxzlBkA"><i class="icofont-youtube-play"></i></a></li>
@@ -213,59 +228,6 @@
 <!--https://www.youtube.com/channel/UCeqqVvtYDc1eYENrl1ahcJA?app=desktop-->
     <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
 	<script src="script.js"></script>
-<!--<html>
-<head>
-<title></title>
-</head>
-<style type="text/css">
-*{
-    margin:0;
-}
-</style>
-<body>
-<script src= "https://threejs.org/build/three.js">
- </script>
- <script>
-  function start(){
-const texture = new THREE.TextureLoader().load( 'HN24-2.png' );
-const texturE = new THREE.TextureLoader().load( 'HN24-1.png' );
-var scene =new THREE.Scene();
-var camera =new THREE.PerspectiveCamera(60,1,0.1,1000);
-var render =new THREE.WebGLRenderer();
-render.setSize(window.innerWidth,window.innerHeight);
-document.body.appendChild(render.domElement);
-var sphere = new THREE.BoxGeometry(50,50,50,50)
-var terrain =new THREE.BoxGeometry(50,50,50,50);
-var circlem = new THREE.MeshBasicMaterial({map: texture })
-var circle =new THREE.Mesh(sphere,circlem)
-circle.position.x = 90
-circle.position.y = 20
-scene.add(circle)
-var material =new THREE.MeshBasicMaterial({map: texturE,
-visible:true});
-camera.position.z = 200
-camera.position.x +=100
-var plane = new THREE.Mesh(terrain,material);
-scene.add(plane);
-plane.position.x += 90
-plane.position.z -= 10
-plane.position.y -= 40
-plane.rotation.x +=900
-function anim(){
-    render.render(scene,camera)
-    circle.rotation.y += 0.01
-    circle.rotation.x +=0.01
-    plane.rotation.z +=0.01
-    requestAnimationFrame(anim)
-}
-anim()
-
-}
-
-    start()
-
-
- </script>-->
 </body>
 </html>
 </body>
