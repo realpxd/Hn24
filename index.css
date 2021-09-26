@@ -323,7 +323,7 @@ a{color:initial;text-decoration:none;}
         width: 48%;
    }
 }
-#preloader{transition:1s;animation:zoom 2s ease-in 1.5s 1 alternate;overflow:hidden;}
+#preloader{transition:1s;overflow:hidden;}
 	.logo-container{
 	    display:block;
 	    margin:10%;
@@ -335,9 +335,12 @@ a{color:initial;text-decoration:none;}
 	    margin:25%;
 	    height:60px;
 	    width:80px;
+	    animation:zoom 0.5s ease-in infinite alternate;
 	}
 @keyframes zoom{
-    from{}
-    to{transform:scale(15);opacity:0;display:none;}
+    0%{transform:rotate(0deg) scale(1.1) translate(0%,-30%);}
+    
+    50%{opacity:1;transform:rotate(0deg);}
+    100%{opacity:1;transform:rotate(0deg) scale(0.8) translate(0%,0%);}
 }
 

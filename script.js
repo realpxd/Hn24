@@ -1,10 +1,31 @@
 var adrsBar = document.getElementById('theme');
+var screen = $('#screen');
+screen.hide();
 
-document.getElementById("screen").style.display = "none";
-setTimeout(function(){
+/*setTimeout(function(){
 document.getElementById("preloader").style.display = "none";
 document.getElementById("screen").style.display = "block";
-},2000);
+},2000);*/
+
+/*$(window).on("load", function() {
+	var preload = $('#preloader');
+	var screen = $('#screen');
+	preload.find('.logo').fadeOut(function(){
+		preload.fadeOut();
+		preload.style.transform = "scale(10)";
+		preload.style.display = "none";
+		preload.style.transition = "1s";
+        document.getElementById('screen').style.opacity = "1";
+	    screen.fadeIn();
+	});
+});*/
+$(window).on("load", function() {
+	var preload = $('#preloader');
+	preload.find('.logo').fadeOut(function(){
+		preload.fadeOut();
+		screen.show();
+	});
+});
 $("title").ready(function(){$(".Facebook,.Support,.Youtube,.Information,.maps").hide();});
 $(".icon1").click(function(){$(".Support").show();document.getElementById("icon1").style.transform = "scale(1.4)";window.scrollTo(0, 0);
            adrsBar.setAttribute('content','#ff0000');
@@ -83,7 +104,7 @@ function sendmail(){
 			//console.log(name, phone, email, message);
 
 			Email.send({
-        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+        SecureToken:"ba2c8925-452a-442f-9c1e-3716277bb7c9",
 				To: 'saininaman006@gmail.com',
 				From: email,
 				Subject: subject,
