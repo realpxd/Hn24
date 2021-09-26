@@ -104,8 +104,8 @@ function sendmail(){
 			//console.log(name, phone, email, message);
 
 			Email.send({
-        SecureToken:"ba2c8925-452a-442f-9c1e-3716277bb7c9",
-				To: 'saininaman006@gmail.com',
+        SecureToken:"c43f36e7-8cb5-4347-9d8f-a814631361c5",
+				To: 'hn24news@gmail.com',
 				From: email,
 				Subject: subject,
 				Body: Body
