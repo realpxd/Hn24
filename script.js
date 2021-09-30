@@ -100,7 +100,7 @@ function sendmail(){
 			var email = $('#email').val();
 			var subject = $('#topic').val();
             var message = $('#Message').val();
-			var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message+'<br>h';
+			var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message+'<br>';
 			//console.log(name, phone, email, message);
 
 			Email.send({
